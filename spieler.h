@@ -42,7 +42,6 @@ public slots:
     void zuruck();
     void neuerSpieler();
     void neuesSpiel();
-    void sperren(bool);
 };
 
 #endif // SPIELER_H

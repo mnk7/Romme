@@ -127,6 +127,7 @@ void Spieler::neuerSpieler()
     neuN->setText("Name");
     neuN->setMinimumHeight(20);
     neuN->setMinimumWidth(40);
+    neuN->setFocusPolicy(Qt::ClickFocus);
     neuN->setVisible(true);
     spielername->push_back(neuN);
 
@@ -158,24 +159,6 @@ void Spieler::neuesSpiel()
     neuerSpieler();
     this->layout();
     this->update();
-}
-
-void Spieler::sperren(bool lock)
-{
-    if(lock)
-    {
-        for(int i = 0; i < spielername->size(); ++i)
-        {
-            spielername->at(i)->setFocusPolicy(Qt::StrongFocus);
-        }
-    }
-    else
-    {
-        for(int i = 0; i < spielername->size(); ++i)
-        {
-            spielername->at(i)->setFocusPolicy(Qt::ClickFocus);
-        }
-    }
 }
 
 void Spieler::paintEvent(QPaintEvent* event)

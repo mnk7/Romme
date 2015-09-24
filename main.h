@@ -17,14 +17,9 @@ public:
 
 public slots:
     void eingabe();
-    void sperren();
-
-signals:
-    void lock(bool);
 
 private:
     Ui::Main *ui;
-    bool locked;
 };
 
 #endif // MAIN_H

@@ -29,7 +29,7 @@
      <enum>QLayout::SetMinimumSize</enum>
     </property>
     <item>
-     <layout class="QHBoxLayout" name="wlayout" stretch="0,0,0,0,0,0,0">
+     <layout class="QHBoxLayout" name="wlayout" stretch="0,0,0,0,0,0">
       <property name="spacing">
        <number>1</number>
       </property>
@@ -74,25 +74,6 @@
         </property>
         <property name="shortcut">
          <string>Ctrl++</string>
-        </property>
-        <property name="flat">
-         <bool>false</bool>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="sperre">
-        <property name="focusPolicy">
-         <enum>Qt::ClickFocus</enum>
-        </property>
-        <property name="toolTip">
-         <string>Sperrt die Namen der Spieler</string>
-        </property>
-        <property name="text">
-         <string>Sperren</string>
-        </property>
-        <property name="shortcut">
-         <string>Ctrl+L</string>
         </property>
         <property name="flat">
          <bool>false</bool>
